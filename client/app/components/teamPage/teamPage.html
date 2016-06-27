@@ -1,0 +1,46 @@
+<navbar></navbar>
+<div class="team-content">
+	<div class="team-top">
+		<div class="team-heading">
+	  		<h1>{{teamPage.teamName}}</h1>
+	  	</div>
+	  	<div class="team-heading">
+	  		<div class="team-logo"><div></div>
+	  	</div>
+	  </div>
+	</div>
+
+<div class="wrapper">
+  <div class="table">
+    <div class="row header">
+      <div class="cell">
+		<span>Pass Yards Rank</span>
+      </div>
+      <div class="cell">
+      	<span>Rush Yards Rank</span>
+      </div>
+      <div class="cell">
+      	<span>Total Points Rank</span>
+      </div>
+      <div class="cell">
+      	<span>TD's Rank</span>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="cell" ng-if="">
+        <a>{{teamPage.passYdsRank}}</a>
+      </div>
+      <div class="cell">
+        <span>{{teamPage.rushYdsRank}}</span>
+      </div>
+      <div class="cell">
+		<span>{{teamPage.scoreRank}}</span>
+      </div>
+      <div class="cell">
+		<span>{{teamPage.tdsRank}}</span>
+      </div>
+    </div>
+  </div>
+ </div>
+</div>
