@@ -4,6 +4,9 @@ class TeamPageController {
     this.teamIndex = $stateParams.index;
     this.team = StatsService.getTeam(this.teamIndex);
     this.teamName = this.team.team;
+    this.statsFields = StatsService.getStatsFields();
+
+    console.log(this.statsFields);
 
     this.passYdsRank = this.team.passYdsRank;
     this.rushYdsRank = this.team.rushYdsRank;

@@ -13,25 +13,25 @@
 <div class="wrapper">
   <div class="table">
     <div class="row header">
-      <div class="cell">
-		<span>Pass Yards Rank</span>
+      <div class="cell" ng-if="teamPage.statsFields.passYds">
+		<span>Pass Yards</span>
       </div>
-      <div class="cell">
-      	<span>Rush Yards Rank</span>
+      <div class="cell" ng-if="teamPage.statsFields.rushYds">
+      	<span>Rushing Yards</span>
       </div>
-      <div class="cell">
+      <div class="cell" ng-if="teamPage.statsFields.score">
       	<span>Total Points Rank</span>
       </div>
-      <div class="cell">
+      <div class="cell" ng-if="teamPage.statsFields.tds">
       	<span>TD's Rank</span>
       </div>
     </div>
 
     <div class="row">
-      <div class="cell" ng-if="">
+      <div class="cell" ng-if="teamPage.statsFields.passYds">
         <a>{{teamPage.passYdsRank}}</a>
       </div>
-      <div class="cell">
+      <div class="cell" ng-if="teamPage.statsFields.rushYds">
         <span>{{teamPage.rushYdsRank}}</span>
       </div>
       <div class="cell">
